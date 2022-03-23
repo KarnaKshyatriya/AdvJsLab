@@ -2,7 +2,7 @@
 var token = config.MY_API_TOKEN;
 var key = config.SECRET_API_KEY;
 
-let api_key=key;
+let api_key=token;
 let url='https://api.openweathermap.org/data/2.5/';
 let txtBox=document.getElementById('sBox');
 txtBox.addEventListener('keypress',display);
