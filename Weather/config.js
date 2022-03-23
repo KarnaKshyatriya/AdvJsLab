@@ -3,4 +3,6 @@ var config = {
     SECRET_API_KEY : 'kk&jk',
   }
 
-  
+  export function hello() {
+    return config;
+  }
