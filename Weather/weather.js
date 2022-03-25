@@ -1,7 +1,8 @@
 //let response=fetch(api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
 
+import {config} from "./config.js"
 
-let api_key='48f37cf1f422925a49866d316756a826';
+let api_key=config.MY_API_TOKEN;
 let url='https://api.openweathermap.org/data/2.5/';
 let txtBox=document.getElementById('sBox');
 txtBox.addEventListener('keypress',display);
@@ -60,4 +61,6 @@ let str=dt.toLocaleString("en-us", options);
 date.innerText=str;
 
 }
+
+window.onload=dateFunction
 
